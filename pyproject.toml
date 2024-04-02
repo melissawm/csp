@@ -78,6 +78,9 @@ develop = [
     "requests",
     "slack-sdk>=3",
 ]
+docs = [
+    "mkdocs-material",
+]
 symphony = [
     "requests",
 ]

@@ -1,0 +1,25 @@
+site_name: CSP
+
+docs_dir: wiki
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - User guide:
+    - 0.-Introduction.md
+    - 1.-Generic-Nodes-(csp.baselib).md
+    - 2.-Math-Nodes-(csp.math).md
+    - 3.-Statistics-Nodes-(csp.stats).md
+    - 4.-Random-Time-Series-Generation-(csp.random).md
+    - 5.-Adapters.md
+    - 6.-Dynamic-Graphs.md
+    - 7.-csp.Struct.md
+    - 8.-Profiler.md
+    - 9.-Caching.md
+  - Development:
+    - 98.-Building-From-Source.md
+    - 99.-Developer.md
