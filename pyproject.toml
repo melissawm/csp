@@ -78,6 +78,11 @@ develop = [
     "requests",
     "slack-sdk>=3",
 ]
+docs = [
+    "sphinx",
+    "myst-parser",
+    "pydata-sphinx-theme"
+]
 symphony = [
     "requests",
 ]
