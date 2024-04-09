@@ -4,32 +4,21 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Composable Stream Processing',
+    Svg: require('@site/static/img/csp-light.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <b>csp</b> ("Composable Stream Processing") is a functional-like reactive
+language that makes time-series stream processing simple to do.  The
+main reactive engine is a C++ based engine which has been exposed to
+python ( other languages may optionally be extended in future versions
+). `csp` applications define a connected graph of components using a
+declarative language (which is essentially python).  Once a graph is
+constructed it can be run using the C++ engine. Graphs are composed of
+some number of "input" adapters, a set of connected calculation "nodes"
+and at the end sent off to "output" adapters. Inputs as well as the
+engine can be seamlessly run in simulation mode using historical input
+adapters or in realtime mode using realtime input adapters.
       </>
     ),
   },
@@ -37,7 +26,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--12')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
