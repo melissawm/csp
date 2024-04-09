@@ -1,10 +1,12 @@
+<img src="img/csp-light.png" width="200" align="center">
+
 `csp` ("Composable Stream Processing") is a functional-like reactive
-language that makes time-series stream processing simple to do.  The
+language that makes time-series stream processing simple to do.  The
 main reactive engine is a C++ based engine which has been exposed to
 python ( other languages may optionally be extended in future versions
 ). `csp` applications define a connected graph of components using a
-declarative language (which is essentially python).  Once a graph is
-constructed it can be run using the C++ engine. Graphs are composed of
+declarative language (which is essentially python).  Once a graph is
+constructed it can be run using the C++ engine. Graphs are composed of
 some number of "input" adapters, a set of connected calculation "nodes"
 and at the end sent off to "output" adapters. Inputs as well as the
 engine can be seamlessly run in simulation mode using historical input
