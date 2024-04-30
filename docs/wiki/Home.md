@@ -9,7 +9,7 @@ CSP (Composable Stream Processing) is a library for high-performance real-time e
 ## Key Features
 
 - **Powerful C++ Engine:** Execute the graph using CSP's C++ Graph Processing Engine
-- **Simulation (i.e., offline) mode:** Test workflows on historical data and quickly move to real-time data in deployment
+- **Simulation (i.e., offline or historical) mode:** Test workflows on historical data and quickly move to real-time data in deployment
 - **Infrastructure-agnostic:** Connect to any data format or storage database, using built-in (Parquet, Kafka, etc.) or custom adapters
 - **Highly-customizable:** Write your own input and output adapters for any data/storage formats, and real-time adapters for specific workflows
 - **PyData interoperability:** Use your favorite libraries from the Scientific Python Ecosystem for numerical and statistical computations
@@ -20,7 +20,7 @@ CSP (Composable Stream Processing) is a library for high-performance real-time e
 ## Get Started
 
 - [Install CSP](get-started/Installation.md) and [write your first CSP program](get-started/First-Steps.md)
-- Learn more about [nodes](concepts/CSP-Node.md), [graphs](concepts/CSP-Graph.md), and [execution modes](concepts/Execution-Modes.md)
+- Learn more about [nodes](concepts/CSP-Node), [graphs](concepts/CSP-Graph.md), and [execution modes](concepts/Execution-Modes.md)
 - Learn to extend CSP with [adapters](concepts/Adapters.md)
 
 <!-- - Check out the [examples](Examples) for various CSP features and use cases -->

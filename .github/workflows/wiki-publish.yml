@@ -2,8 +2,7 @@ name: Publish Docs
 
 on:
   push:
-    branches:
-      - main
+    branches: [main, mkdocs]
     paths:
       - "docs/**"
       - "README.md"
@@ -22,6 +21,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Prepare links for Wiki
+        run: bash .github/workflows/wiki_links.sh
 
       - name: Upload Documentation to Wiki
         uses: Andrew-Chen-Wang/github-wiki-action@v4
